@@ -38,14 +38,41 @@
     return nil;
 }
 
+-(NSString*)imagePathForKey:(NSString*)key
+{
+	NSArray *documentDirectories = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	NSString *documentDirectory = [documentDirectories firstObject];
+	return [documentDirectory stringByAppendingPathComponent:key];
+}
+
 -(void)setImage:(UIImage *)image forKey:(NSString *)key
 {
     self.dictionary[key] = image;
+	
+	// 获取保存图片的路径
+	NSString *imagePath = [self imagePathForKey:key];
+	
+	// 从图片提取JPEG格式的数据
+	NSData *data = UIImageJPEGRepresentation(image, 0.5);
+	
+	// 将JPEG个数的数据写入文件
+	[data writeToFile:imagePath atomically:YES];
 }
 
 -(UIImage*)imageForKey:(NSString *)key
 {
-    return self.dictionary[key];
+    UIImage *result = self.dictionary[key];
+	if (!result) {
+		NSString *imagePath = [self imagePathForKey:key];
+		result = [UIImage imageWithContentsOfFile:imagePath];
+		
+		if (result) {
+			self.dictionary[key] = result;
+		}else{
+			NSLog(@"Error: unable to find %@", imagePath);
+		}
+	}
+	return result;
 }
 
 -(void)deleteImageForKey:(NSString *)key
@@ -54,5 +81,7 @@
         return;
     }
     [self.dictionary removeObjectForKey:key];
+	NSString *imagePath = [self imagePathForKey:key];
+	[[NSFileManager defaultManager]removeItemAtPath:imagePath error:nil];
 }
 @end

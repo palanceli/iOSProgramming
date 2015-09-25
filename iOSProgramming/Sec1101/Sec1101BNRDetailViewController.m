@@ -149,6 +149,7 @@
 }
 
 - (IBAction)takePicture:(id)sender {
+	// 如果imagePicker处于正在弹出的状态，则关闭返回
     if ([self.imagePickerPopover isPopoverVisible]) {
         [self.imagePickerPopover dismissPopoverAnimated:YES];
         self.imagePickerPopover = nil;
