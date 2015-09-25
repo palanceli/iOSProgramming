@@ -87,7 +87,9 @@
     对于遵循该协议的对象，应调用aCoder的encodeObject:forKey:，该函数会再调用NSCoding对象的encodeWithCoder。\n\
     3、通过NSKeyedArchiver与NSKeyedUnarchiver将encode的结果存入文件。调用NSKeyedArchiver的类方法archiveRootObject:toFile保存到文件。该方法的工作原理为：i)先建立一个NSKeyedArchiver对象（它是抽象类NSCoder的具体实现子类）。ii)archiveRootObject:toFile会向rootObject发送encodeWithCoder:消息，并传入NSKeyedArchiver对象。iii)将编码存入指定文件。读取的时候则需要调用NSKyeedUnarchiver的类方法unarchiveObjectWithFile:\n\
     应用沙盒的五个路径：1、应用程序包；2、Documents/；3、Library/Caches/；4、Library/Preferences/；5、tmp/\n\
-    \n\
+    \n\n\
+    关于NSNotificationCenter，通知回调函数在被调用时与主线程之间的关系是怎样的？通知可以跨进程么？为什么设备方向发生变化时要用通知？之前讲到的自动转屏不是专门的处理方案么？\n\n\
+    本章作业，要求把文件保存成PNG，只需要在将UIImage转成图片时，把函数UIImageJPEGRepresentation改为UIImagePNGRepresentation即可。\n\
     ";
     [self.navigationController pushViewController:vc animated:YES];
 }
