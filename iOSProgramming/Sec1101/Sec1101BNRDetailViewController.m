@@ -71,10 +71,10 @@
         return;
     }
     if (UIInterfaceOrientationIsLandscape(orientation)) {
-        self.imageView.hidden = NO;
+        self.imageView.hidden = YES;
         self.cameraButton.enabled = NO;
     }else{
-        self.imageView.hidden = YES;
+        self.imageView.hidden = NO;
         self.cameraButton.enabled = YES;
     }
 }
