@@ -39,6 +39,7 @@
                                @"Sec1101ViewController",
                                @"Sec1201ViewController",
                                @"Sec1301ViewController",
+                               @"Sec1901ViewController",
                                @"SecEndViewController",
                                ];
     self.cellTexts = @[@"第1章 第一个简单的iOS应用",
@@ -60,6 +61,7 @@
                        @"第11章 相机 & 第15章 自动布局入门 & 第17章 自动转屏，UIPopoverController与模态视图控制器",
                        @"第12章 触摸事件与UIResponder",
                        @"第13章 UIGestureRecognizer与UIMenuController",
+                       @"第19章 创建UITableViewCell子类",
                        @"遗留问题"];
 }
 

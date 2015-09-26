@@ -71,6 +71,14 @@
 		F6B4737C1B8DA6460045E578 /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B4737B1B8DA6460045E578 /* RootNavigationController.m */; };
 		F6B4737F1B8DA7100045E578 /* RootTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B4737E1B8DA7100045E578 /* RootTableViewController.m */; };
 		F6B4738A1B8DC1590045E578 /* SecEndViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B473891B8DC1590045E578 /* SecEndViewController.m */; };
+		F6CCACE11BB63050005EA153 /* Sec1901BNRItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CCACE01BB63050005EA153 /* Sec1901BNRItemCell.m */; settings = {ASSET_TAGS = (); }; };
+		F6CCACE31BB630F9005EA153 /* Sec19BNRItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6CCACE21BB630F9005EA153 /* Sec19BNRItemCell.xib */; settings = {ASSET_TAGS = (); }; };
+		F6CCACE81BB63C33005EA153 /* Sec1901BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CCACE71BB63C33005EA153 /* Sec1901BNRItem.m */; settings = {ASSET_TAGS = (); }; };
+		F6CCACEB1BB63C89005EA153 /* Sec1901BNRItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CCACEA1BB63C89005EA153 /* Sec1901BNRItemStore.m */; settings = {ASSET_TAGS = (); }; };
+		F6CCACEE1BB63D32005EA153 /* Sec1901BNRImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CCACED1BB63D32005EA153 /* Sec1901BNRImageStore.m */; settings = {ASSET_TAGS = (); }; };
+		F6CCACF41BB63EEB005EA153 /* Sec1901BNRItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CCACF31BB63EEB005EA153 /* Sec1901BNRItemsViewController.m */; settings = {ASSET_TAGS = (); }; };
+		F6CCACF71BB6449E005EA153 /* Sec1901BNRDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CCACF61BB6449E005EA153 /* Sec1901BNRDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
+		F6CCACFA1BB6FBFB005EA153 /* Sec1901BNRImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CCACF91BB6FBFB005EA153 /* Sec1901BNRImageViewController.m */; settings = {ASSET_TAGS = (); }; };
 		F6DAF41A1B9F2A43008E3307 /* Sec1301BNRLine.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DAF4191B9F2A43008E3307 /* Sec1301BNRLine.m */; };
 		F6DAF41D1B9F2C25008E3307 /* Sec1301BNRDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DAF41C1B9F2C25008E3307 /* Sec1301BNRDrawView.m */; };
 		F6DAF4201B9F3173008E3307 /* Sec1301ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DAF41F1B9F3173008E3307 /* Sec1301ViewController.m */; };
@@ -210,6 +218,21 @@
 		F6B4737E1B8DA7100045E578 /* RootTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTableViewController.m; sourceTree = "<group>"; };
 		F6B473881B8DC1590045E578 /* SecEndViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecEndViewController.h; sourceTree = "<group>"; };
 		F6B473891B8DC1590045E578 /* SecEndViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecEndViewController.m; sourceTree = "<group>"; };
+		F6CCACDF1BB63050005EA153 /* Sec1901BNRItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sec1901BNRItemCell.h; path = Sec1901/Sec1901BNRItemCell.h; sourceTree = "<group>"; };
+		F6CCACE01BB63050005EA153 /* Sec1901BNRItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sec1901BNRItemCell.m; path = Sec1901/Sec1901BNRItemCell.m; sourceTree = "<group>"; };
+		F6CCACE21BB630F9005EA153 /* Sec19BNRItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Sec19BNRItemCell.xib; path = Sec1901/Sec19BNRItemCell.xib; sourceTree = "<group>"; };
+		F6CCACE61BB63C33005EA153 /* Sec1901BNRItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sec1901BNRItem.h; path = Sec1901/Sec1901BNRItem.h; sourceTree = "<group>"; };
+		F6CCACE71BB63C33005EA153 /* Sec1901BNRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sec1901BNRItem.m; path = Sec1901/Sec1901BNRItem.m; sourceTree = "<group>"; };
+		F6CCACE91BB63C89005EA153 /* Sec1901BNRItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sec1901BNRItemStore.h; path = Sec1901/Sec1901BNRItemStore.h; sourceTree = "<group>"; };
+		F6CCACEA1BB63C89005EA153 /* Sec1901BNRItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sec1901BNRItemStore.m; path = Sec1901/Sec1901BNRItemStore.m; sourceTree = "<group>"; };
+		F6CCACEC1BB63D32005EA153 /* Sec1901BNRImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sec1901BNRImageStore.h; path = Sec1901/Sec1901BNRImageStore.h; sourceTree = "<group>"; };
+		F6CCACED1BB63D32005EA153 /* Sec1901BNRImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sec1901BNRImageStore.m; path = Sec1901/Sec1901BNRImageStore.m; sourceTree = "<group>"; };
+		F6CCACF21BB63EEB005EA153 /* Sec1901BNRItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sec1901BNRItemsViewController.h; path = Sec1901/Sec1901BNRItemsViewController.h; sourceTree = "<group>"; };
+		F6CCACF31BB63EEB005EA153 /* Sec1901BNRItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sec1901BNRItemsViewController.m; path = Sec1901/Sec1901BNRItemsViewController.m; sourceTree = "<group>"; };
+		F6CCACF51BB6449E005EA153 /* Sec1901BNRDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sec1901BNRDetailViewController.h; path = Sec1901/Sec1901BNRDetailViewController.h; sourceTree = "<group>"; };
+		F6CCACF61BB6449E005EA153 /* Sec1901BNRDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sec1901BNRDetailViewController.m; path = Sec1901/Sec1901BNRDetailViewController.m; sourceTree = "<group>"; };
+		F6CCACF81BB6FBFB005EA153 /* Sec1901BNRImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sec1901BNRImageViewController.h; path = Sec1901/Sec1901BNRImageViewController.h; sourceTree = "<group>"; };
+		F6CCACF91BB6FBFB005EA153 /* Sec1901BNRImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sec1901BNRImageViewController.m; path = Sec1901/Sec1901BNRImageViewController.m; sourceTree = "<group>"; };
 		F6DAF4181B9F2A43008E3307 /* Sec1301BNRLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sec1301BNRLine.h; path = Sec1301/Sec1301BNRLine.h; sourceTree = "<group>"; };
 		F6DAF4191B9F2A43008E3307 /* Sec1301BNRLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sec1301BNRLine.m; path = Sec1301/Sec1301BNRLine.m; sourceTree = "<group>"; };
 		F6DAF41B1B9F2C25008E3307 /* Sec1301BNRDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sec1301BNRDrawView.h; path = Sec1301/Sec1301BNRDrawView.h; sourceTree = "<group>"; };
@@ -475,6 +498,7 @@
 		F6B473531B8DA3230045E578 /* iOSProgramming */ = {
 			isa = PBXGroup;
 			children = (
+				F6CCACDE1BB63024005EA153 /* Sec1901 */,
 				F6DAF4171B9F296C008E3307 /* Sec1301 */,
 				F68DD0201B9C7DAF00708B78 /* Sec1201 */,
 				F6271E6B1B99A79200FB96FC /* Sec1101 */,
@@ -555,6 +579,28 @@
 				F6B473891B8DC1590045E578 /* SecEndViewController.m */,
 			);
 			name = SecEnd;
+			sourceTree = "<group>";
+		};
+		F6CCACDE1BB63024005EA153 /* Sec1901 */ = {
+			isa = PBXGroup;
+			children = (
+				F6CCACDF1BB63050005EA153 /* Sec1901BNRItemCell.h */,
+				F6CCACE01BB63050005EA153 /* Sec1901BNRItemCell.m */,
+				F6CCACE21BB630F9005EA153 /* Sec19BNRItemCell.xib */,
+				F6CCACE61BB63C33005EA153 /* Sec1901BNRItem.h */,
+				F6CCACE71BB63C33005EA153 /* Sec1901BNRItem.m */,
+				F6CCACE91BB63C89005EA153 /* Sec1901BNRItemStore.h */,
+				F6CCACEA1BB63C89005EA153 /* Sec1901BNRItemStore.m */,
+				F6CCACEC1BB63D32005EA153 /* Sec1901BNRImageStore.h */,
+				F6CCACED1BB63D32005EA153 /* Sec1901BNRImageStore.m */,
+				F6CCACF21BB63EEB005EA153 /* Sec1901BNRItemsViewController.h */,
+				F6CCACF31BB63EEB005EA153 /* Sec1901BNRItemsViewController.m */,
+				F6CCACF51BB6449E005EA153 /* Sec1901BNRDetailViewController.h */,
+				F6CCACF61BB6449E005EA153 /* Sec1901BNRDetailViewController.m */,
+				F6CCACF81BB6FBFB005EA153 /* Sec1901BNRImageViewController.h */,
+				F6CCACF91BB6FBFB005EA153 /* Sec1901BNRImageViewController.m */,
+			);
+			name = Sec1901;
 			sourceTree = "<group>";
 		};
 		F6DAF4171B9F296C008E3307 /* Sec1301 */ = {
@@ -672,6 +718,7 @@
 				F6B473651B8DA3230045E578 /* LaunchScreen.xib in Resources */,
 				F614CE4A1B9750E200BE9022 /* Time.png in Resources */,
 				F6865DB71B946B7800D1E76C /* 苹果.png in Resources */,
+				F6CCACE31BB630F9005EA153 /* Sec19BNRItemCell.xib in Resources */,
 				F614CE491B9750E200BE9022 /* Hypno@2x.png in Resources */,
 				F6B473621B8DA3230045E578 /* Images.xcassets in Resources */,
 				F614CE481B9750E200BE9022 /* Hypno.png in Resources */,
@@ -696,11 +743,13 @@
 				F6ADCCB61B9876C30078FDB2 /* Sec0801BNRItem.m in Sources */,
 				F6271E7D1B99D25900FB96FC /* Sec1101CameraOverlayView.m in Sources */,
 				F6865DC01B949DB000D1E76C /* Sec0402BNRHypnosisInfoViewController.m in Sources */,
+				F6CCACF41BB63EEB005EA153 /* Sec1901BNRItemsViewController.m in Sources */,
 				F693A6841B99501A003B859D /* Sec1001BNRItemsViewController.m in Sources */,
 				F69F80351B92F5D800F06826 /* Sec0101BNRQuizViewController.m in Sources */,
 				F693A6811B994E8A003B859D /* Sec1001BNRItemStore.m in Sources */,
 				F6271E6A1B99801F00FB96FC /* Sec1001BNRItemDatePickerViewController.m in Sources */,
 				F6271E711B99A8F800FB96FC /* Sec1101BNRItemStore.m in Sources */,
+				F6CCACEE1BB63D32005EA153 /* Sec1901BNRImageStore.m in Sources */,
 				F69A16821B95F78E00B7FFC8 /* Sec0501BNRHypnosisView.m in Sources */,
 				F69A168D1B9602C900B7FFC8 /* Sec0503BNRHypnosisView.m in Sources */,
 				F6ADCCC01B9886790078FDB2 /* Sec0802BNRItemStore.m in Sources */,
@@ -709,6 +758,7 @@
 				F681ED061B985E80006D2C8B /* Sec0701HypnosisView.m in Sources */,
 				F6B4735A1B8DA3230045E578 /* AppDelegate.m in Sources */,
 				F69F80361B92F5D800F06826 /* Sec0101InformationViewController.m in Sources */,
+				F6CCACF71BB6449E005EA153 /* Sec1901BNRDetailViewController.m in Sources */,
 				F6271E771B99AE5600FB96FC /* Sec1101BNRDetailViewController.m in Sources */,
 				F6865DBA1B949D4C00D1E76C /* Sec0402BNRHypnosisViewController.m in Sources */,
 				F69A16891B95FDE500B7FFC8 /* Sec0502BNRHypnosisView.m in Sources */,
@@ -717,9 +767,12 @@
 				F693A67E1B994E55003B859D /* Sec1001BNRItem.m in Sources */,
 				F6ADCCBD1B98863E0078FDB2 /* Sec0802BNRItem.m in Sources */,
 				F68DD0261B9C7FBC00708B78 /* Sec1201BNRDrawView.m in Sources */,
+				F6CCACEB1BB63C89005EA153 /* Sec1901BNRItemStore.m in Sources */,
 				F69F803D1B92FFC400F06826 /* Sec0202BNRContainer.m in Sources */,
 				F681ED021B9830DC006D2C8B /* Sec0602BNRHypnosisView.m in Sources */,
+				F6CCACE81BB63C33005EA153 /* Sec1901BNRItem.m in Sources */,
 				F681ED101B986ED5006D2C8B /* Sec0702BNRHypnosisView.m in Sources */,
+				F6CCACFA1BB6FBFB005EA153 /* Sec1901BNRImageViewController.m in Sources */,
 				F69A16901B9602E500B7FFC8 /* Sec0503ViewController.m in Sources */,
 				F6271E741B99A98D00FB96FC /* Sec1101BNRItemsViewController.m in Sources */,
 				F6DAF41A1B9F2A43008E3307 /* Sec1301BNRLine.m in Sources */,
@@ -735,6 +788,7 @@
 				F69F803A1B92F6B600F06826 /* Sec0202BNRItem.m in Sources */,
 				F6ADCCCF1B98952E0078FDB2 /* Sec0901BNRItemStore.m in Sources */,
 				F6ADCCC31B98874E0078FDB2 /* Sec0802BNRItemViewController.m in Sources */,
+				F6CCACE11BB63050005EA153 /* Sec1901BNRItemCell.m in Sources */,
 				F693A6871B995B7D003B859D /* Sec1001BNRDetailViewController.m in Sources */,
 				F681ED091B985EE5006D2C8B /* Sec0701HypnosisViewController.m in Sources */,
 				F6F0D8361B930ACB00E0B5E4 /* Sec0202BNRContainerViewController.m in Sources */,

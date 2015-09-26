@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "Sec1101BNRItemStore.h"
+#import "Sec1901BNRItemStore.h"
 
 @interface AppDelegate ()
 
@@ -37,6 +38,12 @@
         NSLog(@"Saved all of the Sec1101BNRItems");
     }else{
         NSLog(@"Could not save any of the Sec1101BNRItems");
+    }
+    success = [[Sec1901BNRItemStore sharedStore]saveChanges];
+    if (success) {
+        NSLog(@"Saved all of the Sec1901BNRItems");
+    }else{
+        NSLog(@"Could not save any of the Sec1901BNRItems");
     }
 }
 
