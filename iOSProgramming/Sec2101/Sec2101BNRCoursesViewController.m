@@ -8,8 +8,9 @@
 
 #import "Sec2101BNRCoursesViewController.h"
 #import "InformationViewController.h"
+#import "Sec2101BNRWebViewController.h"
 
-@interface Sec2101BNRCoursesViewController()
+@interface Sec2101BNRCoursesViewController()<NSURLSessionDataDelegate>
 @property (nonatomic) NSURLSession *session;
 @property (nonatomic, copy) NSArray *courses;
 @end
@@ -21,7 +22,9 @@
     self = [super initWithCoder:aDecoder];
     if (self) {
         NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
-        _session = [NSURLSession sessionWithConfiguration:config delegate:nil delegateQueue:nil];
+        _session = [NSURLSession sessionWithConfiguration:config delegate:self delegateQueue:nil];
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainSec21" bundle:nil];
+        self.webViewController = [storyboard instantiateViewControllerWithIdentifier:@"Sec2101BNRWebViewController"];
         [self fetchFeed];
     }
     return self;
@@ -29,7 +32,8 @@
 
 -(void)fetchFeed
 {
-    NSString *requestString = @"http://bookapi.bignerdranch.com/courses.json";
+//    NSString *requestString = @"http://bookapi.bignerdranch.com/courses.json";
+    NSString *requestString = @"https://bookapi.bignerdranch.com/private/courses.json";
     NSURL *url = [NSURL URLWithString:requestString];
     NSURLRequest *req = [NSURLRequest requestWithURL:url];
     
@@ -42,6 +46,12 @@
         });
     }];
     [dataTask resume];
+}
+
+-(void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didReceiveChallenge:(NSURLAuthenticationChallenge *)challenge completionHandler:(void (^)(NSURLSessionAuthChallengeDisposition, NSURLCredential * _Nullable))completionHandler
+{
+    NSURLCredential *cred = [NSURLCredential credentialWithUser:@"BigNerdRanch" password:@"AchieveNerdvana" persistence:NSURLCredentialPersistenceForSession];
+    completionHandler(NSURLSessionAuthChallengeUseCredential, cred);
 }
 
 -(void)viewDidLoad
@@ -84,5 +94,16 @@
     cell.textLabel.text = courses[@"title"];
     
     return cell;
+}
+
+#pragma mark - UITableViewDelagate 方法
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath
+{
+    NSDictionary *course = self.courses[indexPath.row];
+    NSURL *URL = [NSURL URLWithString:course[@"url"]];
+    
+    self.webViewController.title = course[@"title"];
+    self.webViewController.URL = URL;
+    [self.navigationController pushViewController:self.webViewController animated:YES];
 }
 @end

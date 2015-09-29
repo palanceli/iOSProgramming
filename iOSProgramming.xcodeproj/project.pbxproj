@@ -53,6 +53,7 @@
 		F69F803D1B92FFC400F06826 /* Sec0202BNRContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = F69F803C1B92FFC400F06826 /* Sec0202BNRContainer.m */; };
 		F6A2CC121BBAC64200D04DC2 /* MainSec21.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6A2CC111BBAC64200D04DC2 /* MainSec21.storyboard */; settings = {ASSET_TAGS = (); }; };
 		F6A2CC151BBAC6F700D04DC2 /* Sec2101BNRCoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A2CC141BBAC6F700D04DC2 /* Sec2101BNRCoursesViewController.m */; settings = {ASSET_TAGS = (); }; };
+		F6A2CC181BBADB1B00D04DC2 /* Sec2101BNRWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A2CC171BBADB1B00D04DC2 /* Sec2101BNRWebViewController.m */; settings = {ASSET_TAGS = (); }; };
 		F6A96C281B92D12B00E5DBD4 /* Sec0201BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A96C271B92D12B00E5DBD4 /* Sec0201BNRItem.m */; };
 		F6ADCCB31B98765C0078FDB2 /* Sec0801BNRItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6ADCCB21B98765C0078FDB2 /* Sec0801BNRItemsViewController.m */; };
 		F6ADCCB61B9876C30078FDB2 /* Sec0801BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F6ADCCB51B9876C30078FDB2 /* Sec0801BNRItem.m */; };
@@ -186,6 +187,8 @@
 		F6A2CC111BBAC64200D04DC2 /* MainSec21.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainSec21.storyboard; path = Sec2101/MainSec21.storyboard; sourceTree = "<group>"; };
 		F6A2CC131BBAC6F700D04DC2 /* Sec2101BNRCoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sec2101BNRCoursesViewController.h; path = Sec2101/Sec2101BNRCoursesViewController.h; sourceTree = "<group>"; };
 		F6A2CC141BBAC6F700D04DC2 /* Sec2101BNRCoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sec2101BNRCoursesViewController.m; path = Sec2101/Sec2101BNRCoursesViewController.m; sourceTree = "<group>"; };
+		F6A2CC161BBADB1B00D04DC2 /* Sec2101BNRWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sec2101BNRWebViewController.h; path = Sec2101/Sec2101BNRWebViewController.h; sourceTree = "<group>"; };
+		F6A2CC171BBADB1B00D04DC2 /* Sec2101BNRWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sec2101BNRWebViewController.m; path = Sec2101/Sec2101BNRWebViewController.m; sourceTree = "<group>"; };
 		F6A96C261B92D12B00E5DBD4 /* Sec0201BNRItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sec0201BNRItem.h; path = Sec0201/Sec0201BNRItem.h; sourceTree = "<group>"; };
 		F6A96C271B92D12B00E5DBD4 /* Sec0201BNRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sec0201BNRItem.m; path = Sec0201/Sec0201BNRItem.m; sourceTree = "<group>"; };
 		F6ADCCB11B98765C0078FDB2 /* Sec0801BNRItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sec0801BNRItemsViewController.h; path = Sec0801/Sec0801BNRItemsViewController.h; sourceTree = "<group>"; };
@@ -439,6 +442,8 @@
 				F6A2CC111BBAC64200D04DC2 /* MainSec21.storyboard */,
 				F6A2CC131BBAC6F700D04DC2 /* Sec2101BNRCoursesViewController.h */,
 				F6A2CC141BBAC6F700D04DC2 /* Sec2101BNRCoursesViewController.m */,
+				F6A2CC161BBADB1B00D04DC2 /* Sec2101BNRWebViewController.h */,
+				F6A2CC171BBADB1B00D04DC2 /* Sec2101BNRWebViewController.m */,
 			);
 			name = Sec2101;
 			sourceTree = "<group>";
@@ -775,6 +780,7 @@
 				F69A168D1B9602C900B7FFC8 /* Sec0503BNRHypnosisView.m in Sources */,
 				F6ADCCC01B9886790078FDB2 /* Sec0802BNRItemStore.m in Sources */,
 				F6F0D8421B93600600E0B5E4 /* Sec0401BNRHypnosisInfoViewController.m in Sources */,
+				F6A2CC181BBADB1B00D04DC2 /* Sec2101BNRWebViewController.m in Sources */,
 				F6271E6E1B99A8CB00FB96FC /* Sec1101BNRItem.m in Sources */,
 				F681ED061B985E80006D2C8B /* Sec0701HypnosisView.m in Sources */,
 				F6B4735A1B8DA3230045E578 /* AppDelegate.m in Sources */,
