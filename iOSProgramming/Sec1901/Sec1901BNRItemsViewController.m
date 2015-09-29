@@ -13,6 +13,7 @@
 #import "Sec1901BNRDetailViewController.h"
 #import "Sec1901BNRItemCell.h"
 #import "Sec1901BNRImageViewController.h"
+#import "InformationViewController.h"
 
 @interface Sec1901BNRItemsViewController()<UIPopoverControllerDelegate>
 @property (nonatomic, strong)UIPopoverController *imagePopover;
@@ -21,6 +22,21 @@
 @end
 
 @implementation Sec1901BNRItemsViewController
+-(instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+        [nc addObserver:self selector:@selector(updateTableViewForDynamicTypeSize) name:UIContentSizeCategoryDidChangeNotification object:nil];
+    }
+    return self;
+}
+
+-(void)dealloc
+{
+    NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+    [nc removeObserver:self];
+}
 
 -(void)viewDidLoad
 {
@@ -32,12 +48,24 @@
     //    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Sec1901UITableViewCell"];
     // 通过UINib对象注册相应的NIB文件
     [self.tableView registerNib:nib forCellReuseIdentifier:@"Sec1901BNRItemCell"];
+    
+    UIBarButtonItem *rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"•••" style:UIBarButtonItemStylePlain target:self action:@selector(showInformation:)];
+    self.navigationItem.rightBarButtonItem = rightBarButtonItem;
+}
+
+-(IBAction)showInformation:(id)sender
+{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    InformationViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"InformationViewController"];
+    vc.informationString = @"为什么Label不会随系统字体修改而变化？\n\n\n\
+    ";
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [self.tableView reloadData];
+    [self updateTableViewForDynamicTypeSize];
 }
 
 #pragma mark - UITableViewDateSource方法
@@ -189,6 +217,27 @@
     Sec1901BNRDetailViewController *vc = [[Sec1901BNRDetailViewController alloc]initForNewItem:NO];
     vc.item = item;
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+#pragma mark -
+-(void)updateTableViewForDynamicTypeSize
+{
+    static NSDictionary *cellHeightDictionary;
+    if (!cellHeightDictionary) {
+        cellHeightDictionary = @{
+                                 UIContentSizeCategoryExtraSmall : @44,
+                                 UIContentSizeCategorySmall : @44,
+                                 UIContentSizeCategoryMedium : @44,
+                                 UIContentSizeCategoryLarge : @44,
+                                 UIContentSizeCategoryExtraLarge : @55,
+                                 UIContentSizeCategoryExtraExtraLarge : @65,
+                                 UIContentSizeCategoryExtraExtraExtraLarge : @75
+                                 };
+    }
+    NSString *userSize = [[UIApplication sharedApplication]preferredContentSizeCategory];
+    NSNumber *cellHeight = cellHeightDictionary[userSize];
+    [self.tableView setRowHeight:cellHeight.floatValue];
+    [self.tableView reloadData];
 }
 
 @end

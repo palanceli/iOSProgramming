@@ -22,6 +22,9 @@
 @property (weak, nonatomic) IBOutlet UIToolbar *toobar;
 @property (weak, nonatomic) IBOutlet UIButton *clearImageButton;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *cameraButton;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *serialNumberLabel;
+@property (weak, nonatomic) IBOutlet UILabel *valueLabel;
 
 @property (strong, nonatomic)UIPopoverController *imagePickerPopover;
 @end
@@ -41,9 +44,19 @@
             UIBarButtonItem *cancelItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancel:)];
             self.navigationItem.leftBarButtonItem = cancelItem;
         }
+        
+        NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+        [nc addObserver:self selector:@selector(updateFonts) name:UIContentSizeCategoryDidChangeNotification object:nil];
     }
     return self;
 }
+
+-(void)dealloc
+{
+    NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+    [nc removeObserver:self];
+}
+
 #pragma mark - 当为模态对话框时的save/cancel响应函数
 -(void)save:(id)sender
 {
@@ -128,6 +141,8 @@
     }else{
         self.clearImageButton.hidden = NO;
     }
+    
+    [self updateFonts];
 }
 
 -(void)viewWillDisappear:(BOOL)animated
@@ -201,6 +216,21 @@
     [[Sec1901BNRImageStore sharedStore]deleteImageForKey:self.item.itemKey];
     self.imageView.image = nil;
     self.clearImageButton.hidden = YES;
+}
+
+#pragma mark - 自动字体处理
+-(void) updateFonts
+{
+    UIFont *font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
+    
+    self.nameLabel.font = font;
+    self.serialNumberLabel.font = font;
+    self.valueLabel.font = font;
+    self.dateLabel.font = font;
+    
+    self.nameTextField.font = font;
+    self.serialTextField.font = font;
+    self.valueTextField.font = font;
 }
 
 @end

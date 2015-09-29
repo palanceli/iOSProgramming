@@ -86,6 +86,7 @@
 		F6F0D83B1B93578400E0B5E4 /* Sec0401BNRHypnosisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F0D8391B93578400E0B5E4 /* Sec0401BNRHypnosisViewController.m */; };
 		F6F0D83F1B93581F00E0B5E4 /* Sec0401BNRHypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F0D83E1B93581F00E0B5E4 /* Sec0401BNRHypnosisView.m */; };
 		F6F0D8421B93600600E0B5E4 /* Sec0401BNRHypnosisInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F0D8411B93600600E0B5E4 /* Sec0401BNRHypnosisInfoViewController.m */; };
+		F6FD8E1C1BBA189000D1CD1D /* MainSec19.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6FD8E1B1BBA189000D1CD1D /* MainSec19.storyboard */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -247,6 +248,7 @@
 		F6F0D83E1B93581F00E0B5E4 /* Sec0401BNRHypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sec0401BNRHypnosisView.m; path = Sec0401/Sec0401BNRHypnosisView.m; sourceTree = "<group>"; };
 		F6F0D8401B93600600E0B5E4 /* Sec0401BNRHypnosisInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sec0401BNRHypnosisInfoViewController.h; path = Sec0401/Sec0401BNRHypnosisInfoViewController.h; sourceTree = "<group>"; };
 		F6F0D8411B93600600E0B5E4 /* Sec0401BNRHypnosisInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sec0401BNRHypnosisInfoViewController.m; path = Sec0401/Sec0401BNRHypnosisInfoViewController.m; sourceTree = "<group>"; };
+		F6FD8E1B1BBA189000D1CD1D /* MainSec19.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainSec19.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -522,6 +524,7 @@
 				F6B473581B8DA3230045E578 /* AppDelegate.h */,
 				F6B473591B8DA3230045E578 /* AppDelegate.m */,
 				F6B4735E1B8DA3230045E578 /* Main.storyboard */,
+				F6FD8E1B1BBA189000D1CD1D /* MainSec19.storyboard */,
 				F6B473611B8DA3230045E578 /* Images.xcassets */,
 				F6B473631B8DA3230045E578 /* LaunchScreen.xib */,
 				F6B473541B8DA3230045E578 /* Supporting Files */,
@@ -711,6 +714,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6FD8E1C1BBA189000D1CD1D /* MainSec19.storyboard in Resources */,
 				F6ADCCC51B988FA10078FDB2 /* 背景.png in Resources */,
 				F681ECFA1B982B8C006D2C8B /* Quiz@2x.png in Resources */,
 				F6B473601B8DA3230045E578 /* Main.storyboard in Resources */,
