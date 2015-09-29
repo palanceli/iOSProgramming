@@ -51,6 +51,8 @@
 		F69F80361B92F5D800F06826 /* Sec0101InformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F69F80341B92F5D800F06826 /* Sec0101InformationViewController.m */; };
 		F69F803A1B92F6B600F06826 /* Sec0202BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F69F80391B92F6B600F06826 /* Sec0202BNRItem.m */; };
 		F69F803D1B92FFC400F06826 /* Sec0202BNRContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = F69F803C1B92FFC400F06826 /* Sec0202BNRContainer.m */; };
+		F6A2CC121BBAC64200D04DC2 /* MainSec21.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6A2CC111BBAC64200D04DC2 /* MainSec21.storyboard */; settings = {ASSET_TAGS = (); }; };
+		F6A2CC151BBAC6F700D04DC2 /* Sec2101BNRCoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A2CC141BBAC6F700D04DC2 /* Sec2101BNRCoursesViewController.m */; settings = {ASSET_TAGS = (); }; };
 		F6A96C281B92D12B00E5DBD4 /* Sec0201BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A96C271B92D12B00E5DBD4 /* Sec0201BNRItem.m */; };
 		F6ADCCB31B98765C0078FDB2 /* Sec0801BNRItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6ADCCB21B98765C0078FDB2 /* Sec0801BNRItemsViewController.m */; };
 		F6ADCCB61B9876C30078FDB2 /* Sec0801BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F6ADCCB51B9876C30078FDB2 /* Sec0801BNRItem.m */; };
@@ -181,6 +183,9 @@
 		F69F80391B92F6B600F06826 /* Sec0202BNRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sec0202BNRItem.m; path = Sec0202/Sec0202BNRItem.m; sourceTree = "<group>"; };
 		F69F803B1B92FFC400F06826 /* Sec0202BNRContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sec0202BNRContainer.h; path = Sec0202/Sec0202BNRContainer.h; sourceTree = "<group>"; };
 		F69F803C1B92FFC400F06826 /* Sec0202BNRContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sec0202BNRContainer.m; path = Sec0202/Sec0202BNRContainer.m; sourceTree = "<group>"; };
+		F6A2CC111BBAC64200D04DC2 /* MainSec21.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainSec21.storyboard; path = Sec2101/MainSec21.storyboard; sourceTree = "<group>"; };
+		F6A2CC131BBAC6F700D04DC2 /* Sec2101BNRCoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sec2101BNRCoursesViewController.h; path = Sec2101/Sec2101BNRCoursesViewController.h; sourceTree = "<group>"; };
+		F6A2CC141BBAC6F700D04DC2 /* Sec2101BNRCoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sec2101BNRCoursesViewController.m; path = Sec2101/Sec2101BNRCoursesViewController.m; sourceTree = "<group>"; };
 		F6A96C261B92D12B00E5DBD4 /* Sec0201BNRItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sec0201BNRItem.h; path = Sec0201/Sec0201BNRItem.h; sourceTree = "<group>"; };
 		F6A96C271B92D12B00E5DBD4 /* Sec0201BNRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sec0201BNRItem.m; path = Sec0201/Sec0201BNRItem.m; sourceTree = "<group>"; };
 		F6ADCCB11B98765C0078FDB2 /* Sec0801BNRItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sec0801BNRItemsViewController.h; path = Sec0801/Sec0801BNRItemsViewController.h; sourceTree = "<group>"; };
@@ -428,6 +433,16 @@
 			name = Sec0202;
 			sourceTree = "<group>";
 		};
+		F6A2CC101BBAC5DA00D04DC2 /* Sec2101 */ = {
+			isa = PBXGroup;
+			children = (
+				F6A2CC111BBAC64200D04DC2 /* MainSec21.storyboard */,
+				F6A2CC131BBAC6F700D04DC2 /* Sec2101BNRCoursesViewController.h */,
+				F6A2CC141BBAC6F700D04DC2 /* Sec2101BNRCoursesViewController.m */,
+			);
+			name = Sec2101;
+			sourceTree = "<group>";
+		};
 		F6A96C221B92CE9A00E5DBD4 /* Sec0201 */ = {
 			isa = PBXGroup;
 			children = (
@@ -500,6 +515,7 @@
 		F6B473531B8DA3230045E578 /* iOSProgramming */ = {
 			isa = PBXGroup;
 			children = (
+				F6A2CC101BBAC5DA00D04DC2 /* Sec2101 */,
 				F6CCACDE1BB63024005EA153 /* Sec1901 */,
 				F6DAF4171B9F296C008E3307 /* Sec1301 */,
 				F68DD0201B9C7DAF00708B78 /* Sec1201 */,
@@ -714,6 +730,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6A2CC121BBAC64200D04DC2 /* MainSec21.storyboard in Resources */,
 				F6FD8E1C1BBA189000D1CD1D /* MainSec19.storyboard in Resources */,
 				F6ADCCC51B988FA10078FDB2 /* 背景.png in Resources */,
 				F681ECFA1B982B8C006D2C8B /* Quiz@2x.png in Resources */,
@@ -809,6 +826,7 @@
 				F6DAF41D1B9F2C25008E3307 /* Sec1301BNRDrawView.m in Sources */,
 				F6271E7A1B99C1C100FB96FC /* Sec1101BNRImageStore.m in Sources */,
 				F6A96C281B92D12B00E5DBD4 /* Sec0201BNRItem.m in Sources */,
+				F6A2CC151BBAC6F700D04DC2 /* Sec2101BNRCoursesViewController.m in Sources */,
 				F6ADCCB31B98765C0078FDB2 /* Sec0801BNRItemsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

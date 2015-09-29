@@ -64,6 +64,7 @@
             @[@"Main",      @"Sec1201ViewController",             @"第12章 触摸事件与UIResponder"],
             @[@"Main",      @"Sec1301ViewController",             @"第13章 UIGestureRecognizer与UIMenuController"],
             @[@"MainSec19", @"Sec1901ViewController",             @"第19章 创建UITableViewCell子类"],
+            @[@"MainSec21", @"Sec2101ViewController",             @"第21章 Web服务与UIWebView"],
             @[@"Main",      @"SecEndViewController",              @"遗留问题"],
             ];
 
@@ -94,7 +95,7 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.viewControllerIDs.count;
+    return self.cells.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
