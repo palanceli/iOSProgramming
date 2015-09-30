@@ -108,7 +108,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bVk-cr-iw0">
                                 <rect key="frame" x="64" y="116" width="322" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="epV-hS-3we">
                                 <rect key="frame" x="20" y="182" width="374" height="418"/>
@@ -122,6 +122,11 @@
                                     <barButtonItem systemItem="camera" id="1Ro-f4-NKK">
                                         <connections>
                                             <action selector="takePicture:" destination="ipB-Zr-vVM" id="xaL-ci-vL2"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Type" id="cPY-sv-fmm">
+                                        <connections>
+                                            <action selector="showAssetTypePicker:" destination="ipB-Zr-vVM" id="3cN-Kj-JLP"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -141,6 +146,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0PZ-kM-WEF">
                                 <rect key="frame" x="177" y="644" width="60" height="30"/>
                                 <state key="normal" title="清除照片"/>
+                                <connections>
+                                    <action selector="clearImage:" destination="ipB-Zr-vVM" eventType="touchUpInside" id="YDZ-IV-H78"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -173,9 +181,13 @@
                             <constraint firstItem="epV-hS-3we" firstAttribute="leading" secondItem="Afq-gV-xKs" secondAttribute="leadingMargin" id="vRS-Qd-NC5"/>
                             <constraint firstItem="epV-hS-3we" firstAttribute="top" secondItem="UvG-KS-8lg" secondAttribute="bottom" constant="8" id="x2D-jw-Oaf"/>
                         </constraints>
+                        <connections>
+                            <action selector="backgroundTapped:" destination="ipB-Zr-vVM" eventType="touchUpInside" id="SGH-ah-UyI"/>
+                        </connections>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="assetTypeButton" destination="cPY-sv-fmm" id="Vfy-dC-1J5"/>
                         <outlet property="cameraButton" destination="1Ro-f4-NKK" id="H9H-xD-ISK"/>
                         <outlet property="clearImageButton" destination="0PZ-kM-WEF" id="EGB-T7-5ML"/>
                         <outlet property="dateLabel" destination="UvG-KS-8lg" id="RCe-A4-MOM"/>
@@ -192,6 +204,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s2X-Oc-Dsq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1328" y="13"/>
+        </scene>
+        <!--Sec1901BNR Asset Type View Controller-->
+        <scene sceneID="EKX-s4-Dj0">
+            <objects>
+                <tableViewController storyboardIdentifier="Sec1901BNRAssetTypeViewController" id="7XD-Qb-PYf" customClass="Sec1901BNRAssetTypeViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="nzi-jE-Giq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="V2T-E8-vxw">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="V2T-E8-vxw" id="2KQ-u4-9fh">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="7XD-Qb-PYf" id="Tcb-4F-7nE"/>
+                            <outlet property="delegate" destination="7XD-Qb-PYf" id="6yh-do-sND"/>
+                        </connections>
+                    </tableView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1zm-t4-g9V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-880" y="13"/>
         </scene>
     </scenes>
 </document>

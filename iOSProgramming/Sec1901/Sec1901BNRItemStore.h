@@ -17,5 +17,6 @@
 -(void)moveItemAtIndex:(NSUInteger)fromIndex toIndex:(NSUInteger)toIndex;
 -(NSArray*)allItems;
 -(BOOL)saveChanges;
+-(NSArray *)allAssetTypes;
 
 @end

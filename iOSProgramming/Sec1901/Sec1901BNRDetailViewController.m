@@ -10,6 +10,7 @@
 #import "Sec1901BNRItemStore.h"
 #import "Sec1901BNRItem.h"
 #import "Sec1901BNRImageStore.h"
+#import "Sec1901BNRAssetTypeViewController.h"
 
 @interface Sec1901BNRDetailViewController() <UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIPopoverControllerDelegate>
 
@@ -27,6 +28,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *valueLabel;
 
 @property (strong, nonatomic)UIPopoverController *imagePickerPopover;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *assetTypeButton;
+
 @end
 
 @implementation Sec1901BNRDetailViewController
@@ -34,7 +37,7 @@
 #pragma mark - 初始化
 -(instancetype)initForNewItem:(BOOL)isNew
 {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainSec19" bundle:nil];
     self = [storyboard instantiateViewControllerWithIdentifier:@"Sec1901BNRDetailViewController"];
     if (self) {
         if (isNew) {
@@ -142,6 +145,12 @@
         self.clearImageButton.hidden = NO;
     }
     
+    NSString *typeLabel = [self.item.assetType valueForKey:@"label"];
+    if (!typeLabel) {
+        typeLabel = @"None";
+    }
+    self.assetTypeButton.title = [NSString stringWithFormat:@"Type: %@", typeLabel];
+    
     [self updateFonts];
 }
 
@@ -231,6 +240,16 @@
     self.nameTextField.font = font;
     self.serialTextField.font = font;
     self.valueTextField.font = font;
+}
+- (IBAction)showAssetTypePicker:(id)sender
+{
+    [self.view endEditing:YES];
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainSec19" bundle:nil];
+    
+    Sec1901BNRAssetTypeViewController *avc = [storyboard instantiateViewControllerWithIdentifier:@"Sec1901BNRAssetTypeViewController"];
+    avc.item = self.item;
+    [self.navigationController pushViewController:avc animated:YES];
 }
 
 @end

@@ -21,6 +21,10 @@
 		F6271E771B99AE5600FB96FC /* Sec1101BNRDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6271E761B99AE5600FB96FC /* Sec1101BNRDetailViewController.m */; };
 		F6271E7A1B99C1C100FB96FC /* Sec1101BNRImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F6271E791B99C1C100FB96FC /* Sec1101BNRImageStore.m */; };
 		F6271E7D1B99D25900FB96FC /* Sec1101CameraOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6271E7C1B99D25900FB96FC /* Sec1101CameraOverlayView.m */; };
+		F65284001BBBC449004FA6A0 /* Sec1901.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F65283FE1BBBC449004FA6A0 /* Sec1901.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
+		F65284031BBBC6F5004FA6A0 /* Sec1901BNRImageTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = F65284021BBBC6F5004FA6A0 /* Sec1901BNRImageTransformer.m */; settings = {ASSET_TAGS = (); }; };
+		F65284061BBBCD3B004FA6A0 /* Sec1901BNRItem+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F65284051BBBCD3B004FA6A0 /* Sec1901BNRItem+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		F65284091BBBFFA7004FA6A0 /* Sec1901BNRAssetTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F65284081BBBFFA7004FA6A0 /* Sec1901BNRAssetTypeViewController.m */; settings = {ASSET_TAGS = (); }; };
 		F681ECFA1B982B8C006D2C8B /* Quiz@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F681ECF91B982B8C006D2C8B /* Quiz@2x.png */; };
 		F681ECFC1B982B95006D2C8B /* Quiz.png in Resources */ = {isa = PBXBuildFile; fileRef = F681ECFB1B982B95006D2C8B /* Quiz.png */; };
 		F681ECFF1B982BDE006D2C8B /* Sec0602BNRQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F681ECFE1B982BDE006D2C8B /* Sec0602BNRQuizViewController.m */; };
@@ -127,6 +131,13 @@
 		F6271E791B99C1C100FB96FC /* Sec1101BNRImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sec1101BNRImageStore.m; path = Sec1101/Sec1101BNRImageStore.m; sourceTree = "<group>"; };
 		F6271E7B1B99D25900FB96FC /* Sec1101CameraOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sec1101CameraOverlayView.h; path = Sec1101/Sec1101CameraOverlayView.h; sourceTree = "<group>"; };
 		F6271E7C1B99D25900FB96FC /* Sec1101CameraOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sec1101CameraOverlayView.m; path = Sec1101/Sec1101CameraOverlayView.m; sourceTree = "<group>"; };
+		F65283FF1BBBC449004FA6A0 /* Sec1901.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sec1901.xcdatamodel; sourceTree = "<group>"; };
+		F65284011BBBC6F5004FA6A0 /* Sec1901BNRImageTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sec1901BNRImageTransformer.h; path = Sec1901/Sec1901BNRImageTransformer.h; sourceTree = "<group>"; };
+		F65284021BBBC6F5004FA6A0 /* Sec1901BNRImageTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sec1901BNRImageTransformer.m; path = Sec1901/Sec1901BNRImageTransformer.m; sourceTree = "<group>"; };
+		F65284041BBBCD3B004FA6A0 /* Sec1901BNRItem+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Sec1901BNRItem+CoreDataProperties.h"; path = "Sec1901/Sec1901BNRItem+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F65284051BBBCD3B004FA6A0 /* Sec1901BNRItem+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Sec1901BNRItem+CoreDataProperties.m"; path = "Sec1901/Sec1901BNRItem+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F65284071BBBFFA7004FA6A0 /* Sec1901BNRAssetTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sec1901BNRAssetTypeViewController.h; path = Sec1901/Sec1901BNRAssetTypeViewController.h; sourceTree = "<group>"; };
+		F65284081BBBFFA7004FA6A0 /* Sec1901BNRAssetTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sec1901BNRAssetTypeViewController.m; path = Sec1901/Sec1901BNRAssetTypeViewController.m; sourceTree = "<group>"; };
 		F681ECF91B982B8C006D2C8B /* Quiz@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Quiz@2x.png"; path = "Sec0602/Quiz@2x.png"; sourceTree = "<group>"; };
 		F681ECFB1B982B95006D2C8B /* Quiz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Quiz.png; path = Sec0602/Quiz.png; sourceTree = "<group>"; };
 		F681ECFD1B982BDE006D2C8B /* Sec0602BNRQuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sec0602BNRQuizViewController.h; path = Sec0602/Sec0602BNRQuizViewController.h; sourceTree = "<group>"; };
@@ -623,6 +634,13 @@
 				F6CCACF61BB6449E005EA153 /* Sec1901BNRDetailViewController.m */,
 				F6CCACF81BB6FBFB005EA153 /* Sec1901BNRImageViewController.h */,
 				F6CCACF91BB6FBFB005EA153 /* Sec1901BNRImageViewController.m */,
+				F65283FE1BBBC449004FA6A0 /* Sec1901.xcdatamodeld */,
+				F65284011BBBC6F5004FA6A0 /* Sec1901BNRImageTransformer.h */,
+				F65284021BBBC6F5004FA6A0 /* Sec1901BNRImageTransformer.m */,
+				F65284041BBBCD3B004FA6A0 /* Sec1901BNRItem+CoreDataProperties.h */,
+				F65284051BBBCD3B004FA6A0 /* Sec1901BNRItem+CoreDataProperties.m */,
+				F65284071BBBFFA7004FA6A0 /* Sec1901BNRAssetTypeViewController.h */,
+				F65284081BBBFFA7004FA6A0 /* Sec1901BNRAssetTypeViewController.m */,
 			);
 			name = Sec1901;
 			sourceTree = "<group>";
@@ -772,6 +790,7 @@
 				F6CCACF41BB63EEB005EA153 /* Sec1901BNRItemsViewController.m in Sources */,
 				F693A6841B99501A003B859D /* Sec1001BNRItemsViewController.m in Sources */,
 				F69F80351B92F5D800F06826 /* Sec0101BNRQuizViewController.m in Sources */,
+				F65284001BBBC449004FA6A0 /* Sec1901.xcdatamodeld in Sources */,
 				F693A6811B994E8A003B859D /* Sec1001BNRItemStore.m in Sources */,
 				F6271E6A1B99801F00FB96FC /* Sec1001BNRItemDatePickerViewController.m in Sources */,
 				F6271E711B99A8F800FB96FC /* Sec1101BNRItemStore.m in Sources */,
@@ -788,6 +807,7 @@
 				F6CCACF71BB6449E005EA153 /* Sec1901BNRDetailViewController.m in Sources */,
 				F6271E771B99AE5600FB96FC /* Sec1101BNRDetailViewController.m in Sources */,
 				F6865DBA1B949D4C00D1E76C /* Sec0402BNRHypnosisViewController.m in Sources */,
+				F65284091BBBFFA7004FA6A0 /* Sec1901BNRAssetTypeViewController.m in Sources */,
 				F69A16891B95FDE500B7FFC8 /* Sec0502BNRHypnosisView.m in Sources */,
 				F69A16861B95FD3200B7FFC8 /* Sec0502ViewController.m in Sources */,
 				F6B4737C1B8DA6460045E578 /* RootNavigationController.m in Sources */,
@@ -820,6 +840,7 @@
 				F681ED091B985EE5006D2C8B /* Sec0701HypnosisViewController.m in Sources */,
 				F6F0D8361B930ACB00E0B5E4 /* Sec0202BNRContainerViewController.m in Sources */,
 				F614CE381B97492300BE9022 /* Sec0601BNRHypnosisView.m in Sources */,
+				F65284061BBBCD3B004FA6A0 /* Sec1901BNRItem+CoreDataProperties.m in Sources */,
 				F68DD0231B9C7E7200708B78 /* Sec1201BNRLine.m in Sources */,
 				F6B4737F1B8DA7100045E578 /* RootTableViewController.m in Sources */,
 				F68DD0291B9C86E200708B78 /* Sec1201BNRDrawViewController.m in Sources */,
@@ -828,6 +849,7 @@
 				F614CE351B9748EC00BE9022 /* Sec0601BNRHypnosisViewController.m in Sources */,
 				F6865DB31B94690700D1E76C /* Sec0402BNRHypnosisView.m in Sources */,
 				F6DAF4201B9F3173008E3307 /* Sec1301ViewController.m in Sources */,
+				F65284031BBBC6F5004FA6A0 /* Sec1901BNRImageTransformer.m in Sources */,
 				F614CE3B1B974AE600BE9022 /* Sec0601BNRReminderViewController.m in Sources */,
 				F6DAF41D1B9F2C25008E3307 /* Sec1301BNRDrawView.m in Sources */,
 				F6271E7A1B99C1C100FB96FC /* Sec1101BNRImageStore.m in Sources */,
@@ -1058,6 +1080,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F65283FE1BBBC449004FA6A0 /* Sec1901.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F65283FF1BBBC449004FA6A0 /* Sec1901.xcdatamodel */,
+			);
+			currentVersion = F65283FF1BBBC449004FA6A0 /* Sec1901.xcdatamodel */;
+			name = Sec1901.xcdatamodeld;
+			path = Sec1901/Sec1901.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F6B473491B8DA3230045E578 /* Project object */;
 }
